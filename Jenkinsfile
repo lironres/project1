@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('clone') {
             steps {
-                echo "clone repo"
+                echo "clone repo 1"
                 cmd("git clone https://github.com/lironres/project1.git")
             }
         }
