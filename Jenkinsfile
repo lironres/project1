@@ -11,7 +11,7 @@ pipeline {
             stage('Copy to Desktop') {
             steps {
                 echo "Reading File Content"
-                powershell("Move-Item myapp.py C:\\Users\\Liron\\Desktop\\")
+                powershell("""Move-Item myapp.py C:\\Users\\Liron\\Desktop\\""")
                 
             }
         }
