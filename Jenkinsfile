@@ -4,7 +4,7 @@ pipeline {
         stage('clone') {
             steps {
                 echo "clone repo"
-                git clone "https://github.com/lironres/project1.git"
+                powershell("git clone https://github.com/lironres/project1.git")
             }
         }
             stage('Copy to Desktop') {
